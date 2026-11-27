@@ -1,0 +1,84 @@
+{
+  "info": {
+    "name": "Atividade 13/11/2026 - JSONPlaceholder",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Exemplos de parâmetros, corpo e cabeçalhos para importar no Hoppscotch."
+  },
+  "item": [
+    {
+      "name": "1 - Query Parameters",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/comments?postId=1",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "comments"
+          ],
+          "query": [
+            {
+              "key": "postId",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "2 - Request Body",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Minha Primeira API\",\n  \"body\": \"Testando o envio de dados via POST no Hoppscotch.\",\n  \"userId\": 10\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://jsonplaceholder.typicode.com/posts"
+      }
+    },
+    {
+      "name": "3 - Headers",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer TOKEN_EXEMPLO",
+            "disabled": true,
+            "description": "Exemplo didático; JSONPlaceholder não exige token."
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Minha Primeira API\",\n  \"body\": \"Testando o envio de dados via POST no Hoppscotch.\",\n  \"userId\": 10\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://jsonplaceholder.typicode.com/posts"
+      }
+    }
+  ]
+}
