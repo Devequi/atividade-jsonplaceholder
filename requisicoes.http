@@ -1,0 +1,23 @@
+### 1. Query Parameters
+GET https://jsonplaceholder.typicode.com/comments?postId=1
+
+### 2. Request Body
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+  "title": "Minha Primeira API",
+  "body": "Testando o envio de dados via POST no Hoppscotch.",
+  "userId": 10
+}
+
+### 3. Headers
+# Authorization: Bearer TOKEN_EXEMPLO (somente para APIs que exigem autenticação)
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+  "title": "Minha Primeira API",
+  "body": "Testando o envio de dados via POST no Hoppscotch.",
+  "userId": 10
+}
